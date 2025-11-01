@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Eastman";
+  font-weight: 400;
+  src: local("Eastman"),
+    url("../fonts/EastmanRomanTrial-Regular.woff2") format("woff2"),
+    url("../fonts/EastmanRomanTrial-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Eastman";
+  font-weight: 600;
+  src: local("Eastman DemiBold"),
+    url("../fonts/EastmanRomanTrial-DemiBold.woff2") format("woff2"),
+    url("../fonts/EastmanRomanTrial-DemiBold.woff") format("woff");
+}
+
+
+// .outfit-<uniquifier> {
+//   font-family: "Outfit", sans-serif;
+//   font-optical-sizing: auto;
+//   font-weight: <weight>;
+//   font-style: normal;
+// }
