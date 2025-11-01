@@ -370,6 +370,9 @@ section {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+.menu__item img {
+  max-height: 60px;
+}
 .menu__item:not(:first-child):not(:last-child) a::after {
   content: "";
   position: absolute;
@@ -727,6 +730,13 @@ section {
   text-decoration: underline;
   color: #3b1d1e;
   font-weight: 600;
+}
+.contact__help {
+  max-width: 50%;
+  text-align: center;
+  color: #fff;
+  opacity: 0.7;
+  margin-top: 20px;
 }
 .contact__btn {
   margin-top: 15px;
@@ -1509,6 +1519,11 @@ section {
     width: 100%;
     display: block;
     text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .contact__help {
+    max-width: 100%;
   }
 }
 

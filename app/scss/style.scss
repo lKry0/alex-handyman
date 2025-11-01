@@ -35,6 +35,10 @@
       transition: all .3s ease;
     }
 
+    img {
+      max-height: 60px;
+    }
+
     &:not(:first-child):not(:last-child) {
       a::after {
         content: '';
@@ -404,6 +408,16 @@
       }
 
     }
+
+
+  }
+
+  &__help {
+    max-width: 50%;
+    text-align: center;
+    color: #fff;
+    opacity: 0.7;
+    margin-top: 20px;
   }
 
   &__btn {
@@ -1184,6 +1198,12 @@ section {
         display: block;
         text-align: center;
       }
+    }
+  }
+
+  &__help {
+    @include tablet {
+      max-width: 100%;
     }
   }
 }
