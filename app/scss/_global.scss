@@ -199,7 +199,7 @@ section {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   margin-bottom: 30px;
 }
@@ -210,9 +210,9 @@ section {
   overflow: hidden;
   border-radius: 12px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-  cursor: ew-resize;
+  cursor: default;
   user-select: none;
-  aspect-ratio: 4/3;
+  aspect-ratio: 1;
 }
 
 .before-after__img {
@@ -246,6 +246,7 @@ section {
   z-index: 3;
   transform: translateX(-50%);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  cursor: ew-resize;
 }
 
 .divider::before {
