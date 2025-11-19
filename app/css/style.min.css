@@ -110,6 +110,11 @@ a {
   padding: 0 15px;
 }
 
+.media-icons {
+  display: flex;
+  gap: 10px;
+}
+
 .call-btn a {
   border: 2px solid transparent;
   color: #fff;
@@ -388,7 +393,7 @@ section {
 .menu__item:not(:first-child):not(:last-child):hover a::after {
   width: 100%;
 }
-.menu .call-btn {
+.menu__item-media {
   margin-left: auto;
 }
 
@@ -686,7 +691,6 @@ section {
 }
 .about__text {
   max-width: 90%;
-  text-align: center;
   font-size: 24px;
   color: rgba(59, 29, 30, 0.7058823529);
   line-height: 150%;
@@ -749,6 +753,9 @@ section {
 .contact__btn a::after {
   background-image: url("../images/tel-icon-dark.svg");
 }
+.contact__media-icons {
+  margin-top: 15px;
+}
 
 .footer {
   background-color: #3b1d1e;
@@ -784,7 +791,7 @@ section {
   opacity: 0.6;
 }
 .footer__btn {
-  margin-bottom: 70px;
+  margin-bottom: 30px;
 }
 .footer__btn a {
   background-color: #fff;
@@ -809,6 +816,9 @@ section {
   left: 0;
   right: 0;
   margin: 0 auto;
+}
+.footer__media-icons {
+  margin-bottom: 55px;
 }
 
 @media (max-width: 1024px) {
@@ -1656,6 +1666,25 @@ burger.active span:nth-child(3) {
   transform: rotate(-45deg) translate(8px, -8px);
 }
 
+@media (max-width: 1120px) {
+  .menu {
+    gap: 20px;
+  }
+  .menu .call-btn {
+    min-width: 180px;
+  }
+  .menu .call-btn a {
+    font-size: 16px;
+    padding-left: 50px;
+  }
+  .menu .call-btn a::after {
+    width: 20px;
+    height: 20px;
+  }
+  .main-screen__inner {
+    padding-top: 20%;
+  }
+}
 @media (max-width: 768px) {
   .menu {
     position: fixed;

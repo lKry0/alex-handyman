@@ -59,11 +59,15 @@
     }
 
 
+
+
   }
 
-  .call-btn {
+  &__item-media {
     margin-left: auto;
+
   }
+
 }
 
 .call-btn {
@@ -361,7 +365,6 @@
 
   &__text {
     max-width: 90%;
-    text-align: center;
     font-size: 24px;
     color: #3b1d1eb4;
     line-height: 150%;
@@ -434,6 +437,10 @@
 
   }
 
+  &__media-icons{
+    margin-top: 15px;
+  }
+
 }
 
 .footer {
@@ -465,7 +472,7 @@
   }
 
   &__btn {
-    margin-bottom: 70px;
+    margin-bottom: 30px;
 
     a {
       background-color: #fff;
@@ -495,6 +502,10 @@
       margin: 0 auto;
 
     }
+  }
+
+  &__media-icons{
+    margin-bottom: 55px;
   }
 }
 
@@ -614,12 +625,13 @@ section {
     gap: 15px;
   }
 }
-.before-after__item{
+
+.before-after__item {
   @include tablet {
     max-width: 300px;
   }
 
-  @include mobile{
+  @include mobile {
     max-width: 100%;
   }
 }
@@ -1317,6 +1329,32 @@ burger {
       transform: rotate(-45deg) translate(8px, -8px);
     }
   }
+}
+
+@media(max-width:1120px) {
+  .menu {
+    gap: 20px;
+
+    .call-btn {
+      min-width: 180px;
+
+      a {
+        font-size: 16px;
+        padding-left: 50px;
+
+        &::after {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+
+  .main-screen__inner{
+    padding-top: 20%;
+  }
+
+
 }
 
 // Menu - Update existing styles
