@@ -39,7 +39,7 @@
       max-height: 60px;
     }
 
-    &:not(:first-child):not(:last-child) {
+    &:not(:first-child):not(:last-child):not(.menu__item-media) {
       a::after {
         content: '';
         position: absolute;
